@@ -16,6 +16,7 @@ makedepends=(
 	python-sphinx
 	python-sphinx-furo
 	python-myst-parser
+	python-sphinx-argparse
 )
 checkdepends=(python-pytest python-mock)
 source=("git+$url.git")

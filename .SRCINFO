@@ -12,6 +12,7 @@ pkgbase = python-installer-git
 	makedepends = python-sphinx
 	makedepends = python-sphinx-furo
 	makedepends = python-myst-parser
+	makedepends = python-sphinx-argparse
 	depends = python
 	provides = python-installer=0.4.0.r68.g777a499
 	source = git+https://github.com/pradyunsg/installer.git
