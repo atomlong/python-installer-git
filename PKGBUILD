@@ -2,7 +2,7 @@
 
 _pkgname=installer
 pkgname=python-$_pkgname-git
-pkgver=0.4.0.r68.g777a499
+pkgver=0.7.0.r5.gf89b5d9
 pkgrel=1
 pkgdesc='Low-level library for installing a Python package from a wheel distribution'
 arch=('any')
@@ -42,7 +42,7 @@ package() {
 	cd "$srcdir/$_pkgname"
 
 	local ver=$(git describe --abbrev=0 --tags)
-	PYTHONPATH=src python -m installer -d "$pkgdir" "dist/$_pkgname-$ver-py3-none-any.whl"
+	PYTHONPATH=src python -m installer -d "$pkgdir" dist/*.whl
 
 	# remove windows entrypoint scripts executables
 	rm "$pkgdir/usr/lib"/python*/site-packages/installer/_scripts/*.exe

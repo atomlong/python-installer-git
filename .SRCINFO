@@ -1,6 +1,6 @@
 pkgbase = python-installer-git
 	pkgdesc = Low-level library for installing a Python package from a wheel distribution
-	pkgver = 0.4.0.r68.g777a499
+	pkgver = 0.7.0.r5.gf89b5d9
 	pkgrel = 1
 	url = https://github.com/pradyunsg/installer
 	arch = any
@@ -14,7 +14,7 @@ pkgbase = python-installer-git
 	makedepends = python-myst-parser
 	makedepends = python-sphinx-argparse
 	depends = python
-	provides = python-installer=0.4.0.r68.g777a499
+	provides = python-installer=0.7.0.r5.gf89b5d9
 	source = git+https://github.com/pradyunsg/installer.git
 	sha512sums = SKIP
 
